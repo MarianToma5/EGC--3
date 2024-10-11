@@ -1,0 +1,24 @@
+Toma Marian – Viorel
+3131A
+REFERAT EGC
+
+OpenGL (Open Graphics Library) este un API pentru grafica 2D și 3D, dezvoltat în 1992, care a devenit un standard în dezvoltarea aplicațiilor grafice multiplatformă. Derivațiile sale, precum OpenGL ES (pentru mobile), WebGL (pentru browser) și Vulkan (performanță îmbunătățită), au extins utilitatea și aplicabilitatea acestuia.
+Punctele tari ale OpenGl sunt:
+-	Portabilitatea multiplatforma: desktop, mobile si web
+-	Comunitatea este vasta si multe resurse sunt disponibile
+-	Adaugarea extensiilor 
+-	Performante bune in aplicații cum ar fi jocurile
+Punctele slabe ale OpenGl sunt:
+-	Resursele sunt gestionate mai putin eficient decat alte API
+-	Unele functionalitati sunt vechi si tranzitia la metodele noi este una dificila
+-	Memoria grafica nu are un control foarte detaliat
+-	Lucrul in multithreading nu este unul dintre punctele forte
+Derivații OpenGL:
+-	OpenGL ES: Versiune adaptată pentru dispozitive mobile și sisteme încorporate, eficientă în utilizarea resurselor, potrivită pentru dispozitive cu hardware limitat, cum ar fi console portabile.
+-	WebGL: API bazat pe OpenGL ES pentru randare 3D în browser, fără plugin-uri externe. Deși mai limitat decât OpenGL desktop, este foarte accesibil datorită compatibilității web.
+-	Vulkan: API mai recent, dezvoltat de Khronos Group, care oferă control detaliat asupra hardware-ului și performanță optimizată, în special pentru aplicații multithreading.
+Modelul de automat cu stări finite în OpenGL
+OpenGL funcționează pe un model de automat cu stări finite, unde fiecare apel de funcție schimbă starea contextului grafic, controlând modul în care datele sunt procesate și afișate. Exemple de stări includ activarea unui shader, setarea blending-ului sau a filtrării texturilor. Randarea implică treceri între stări precum definirea obiectelor, aplicarea transformărilor și trimiterea comenzilor către GPU.
+Impactul asupra randării:
+-	Flexibilitate: Permite configurarea dinamică și modulară a scenelor.
+-	Ineficiențe: Schimbările frecvente de stări pot încărca excesiv GPU-ul, necesitând optimizări pentru minimizarea acestor schimbări.
